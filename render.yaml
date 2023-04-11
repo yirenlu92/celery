@@ -12,6 +12,10 @@ services:
           name: celery-redis
           type: redis
           property: connectionString
+      - key: PYTHON_VERSION
+        value: 3.8.2
+      - key: OPENAI_API_KEY
+        value: "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"
   - type: web
     name: app
     region: ohio
